@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="Refresh" Content="5;Url=https://www.baidu.com" />  5秒跳转 -baidu.com
+    <meta http-equiv="Refresh" Content="5">                          5秒刷新-->
+    <title></title>
+    <!--&lt;!&ndash;<link rel="icon" href="favicon_1c83d380.ico">   图片存放本地-->
+    <!--<link rel="icon" href="//concat.lietou-static.com/dev/core/pc/revs/v3/static/images/favicon_1c83d380.ico" type="image/x-icon"> 图片在线连接&ndash;&gt;-->
+       <!--  <div style="width: 200px;border: 1px solid red;word-break: break-all">
+        <p>qweqweqweqweqeqweqweqweqweqasdasdasweq</p>
+        <p>qweqweqweqweqeqweqweqweqwasdasdasdeqweq</p> -->
+
+    </head>
+<body>
+
+    <a href="http://www.baidu.com" target="_blank">百度</a>   创建超链接页面
+    <a href="s1.html target=_blank">s2</a>
+    <a href="#tt">看第二章</a>
+
+    <div style="height: 500px;background-color:red;">第一张</div>
+    <div id = "tt"style="height: 500px;background-color:green;">第二章</div>
+    <h1>id，style：所有标签都可以定义的属性</h1>
+    <h6>a，target  href</h6>
+
+    <img title="瞄大猫" src="1.jpg" style="height:100px;width:100px">
+
+    <h5>a，target  href</h5>
+    <h4>a，target  href</h4>
+    <h3>a，target  href</h3>
+    <h2>a，target  href</h2>
+    <h1>a，target  href</h1>
+
+
+    <select>                        选择框
+        <option value="1">北京</option>
+        <option value="2">上海</option>
+        <option value="3">石家庄</option>>
+        <option value="4"selected="selected">成都</option>
+    </select>
+
+
+    <select size="3">                 滚动选择框
+        <option value="1">上海</option>
+        <option value="2">北京</option>
+        <option value="3">广州</option>
+        <option>广州</option>
+    </select>
+
+    <select multiple="multiple" size="2">   多选滚动选择框
+        <option>上海</option>                按住ctrl进行多选
+        <option>北京</option>
+        <option>广州</option>
+        <option>广州</option>
+    </select>
+
+
+    <select>                                下拉框分类
+        <optgroup label="河北省">
+            <option>石家庄</option>
+             <option>邯郸</option>
+        </optgroup>
+        <optgroup label="山西省">
+            <option>太原</option>
+            <option>平遥</option>
+            </optgroup>
+    </select>
+
+    <h1>input系列标签</h1>
+
+    <input type="checkbox" >    复选框
+    <input type="checkbox" >
+
+
+    <h4>radio<h4>
+    <p>男：<input  name="gender" type="radio" ></p>
+    <p>女：<input  name="gender" type="radio" ></p>         圆点复选框
+
+
+    <input type="text">         文本输入框
+    <input type="password" >    密码框
+
+    <input type="button" value="<button>" />  提交按钮   value 按钮显示文字
+    <input type="submit" value="submit">
+
+
+    <hr />
+    <input type="file">  上传按钮
+
+
+
+
+    <h2>Form</h2>
+    <form action="http://www.baidu.com">
+       <div>
+          主机名：<input type="text">
+       </div>
+
+       <div>
+          ip地址：<input type="text">
+       </div>
+
+       <div>
+          用户：    <input type="text">
+       </div>
+
+       <div>
+          类型：   <input type="text">
+       </div>
+
+          <input type="button" value="提交">           只是一个按钮
+          <input type="submit" value="提交表单">       提交一个表单
+
+    </form>
+
+        <textarea>iii</textarea>
+        <input type="text" valu="jjj"/>
+
+        <label for="c1">婚否</label>
+        <input id="c1" type="checkbox">
+
+
+
+        <ul>
+            <li>111111</li>
+            <li>222222</li>
+            <li>333333</li>
+
+        </ul>
+
+        <ol>
+            <li>wwwww</li>
+            <li>aaaaa</li>
+            <li>ssssss</li>
+        </ol>
+
+
+
+
+        <dl>
+            <dt>标题</dt>
+            <dd>内容</dd>
+            <dd>内容1</dd>
+            <dd>内容2</dd>
+            <dd>内容3</dd>
+
+            <dt>标题</dt>
+            <dd>内容</dd>
+            <dd>内容1</dd>
+            <dd>内容2</dd>
+            <dd>内容3</dd>
+        </dl>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>第一列</th>
+                    <th>第二列</th>
+                        <th>第三列</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>h1</td>
+                    <td>h2</td>
+                    <td>h3</td>
+                </tr>
+                   <tr>
+                    <td>hh1</td>
+                    <td>hh2</td>
+                    <td>hh3</td>
+                </tr>
+
+                <tr>
+                    <td>hhh1</td>
+                    <td>hhh2</td>
+                    <td>hhh3</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+1/块级标签 ，内联标签
+s
+    块级标签：div/ p/ h/
+    内联标签: span,a,label,input,form,img
+
+2、各种符号
+        空格：&nbsp；
+
+3、提交数据标签
+        input 系列
+        sleect
+        textarea
+        form
+    布局标签
+        div
+        span
+
+        a
+        img
+        table
+        H、ul、li、ol、dl、p、br、hr
+
+4、属性
+        公共属性：id，name(一般只是提交数据使用)，style,class
+        input,text
+                <input type="text" value="123"/>
+
+
+
+</select>
+
+</html>

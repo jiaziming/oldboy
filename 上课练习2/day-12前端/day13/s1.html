@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+   <h3>Index</h3>
+    <h3>Index</h3>
+
+
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+////        var age= 18;
+//        var age= 13.3
+////      var age=Number(18);
+//        console.log(parseInt(age))
+//        console.log(parseFloat(age))
+//        var a=2,b=2,c=3,
+
+//    普通函数
+//     function f1(arg) {
+//         console.log(arg);
+//         return"alex"
+//     }
+//
+//     var ret = f1(123)
+//     console.log(ret);
+//
+//     匿名函数
+//     var f =function (arg) {
+//         console.log(arg)
+//     }
+//       f(12354)
+//
+//     自执行函数
+//     (function (arg){
+//         console.log(1111,arg)
+//     })("alex")
+
+      function Foo(name,age) {
+          this.Name = name;
+          this.Age = age;
+          this.Func = function (arg) {
+              return this.Name +arg;
+          }
+      }
+
+      var obj = new Foo("alex",10)
+
+      console.log(obj.Name);
+      console.log(obj.Age);
+
+      var ret = obj.Func("sb")
+      console.log(ret)
+
+
+
+    </script>
+</body>
+</html>
