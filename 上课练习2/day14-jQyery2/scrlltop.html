@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        .go-top{
+            position: fixed;
+            right: 0;
+            bottom:0;
+            width: 100px;
+            height: 100px;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div style="height: 2000px;background-color: #cccccc;">
+        顶部
+        <div  id='id1' style="height:300px;background-color: #66CCCC;overflow: auto">
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+
+
+        </div>
+    </div>
+
+
+    <div class="go-top hide">
+        <a onclick="gotop();">返回顶部</a>
+    </div>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+
+        window.onscroll = function () {
+            //获取当前scrolltop
+            //console.log(123)
+
+            var currenttop = $(window).scrollTop();
+            if (currenttop > 200) {
+                $('.go-top').removeClass('hide');
+            }else{
+                $('.go-top').addClass('hide');
+
+            }
+
+        };
+
+        function gotop() {
+            $(window).scrollTop(0);
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="添加" onclick="addcontent()">
+    <div onclick="func()"></div>
+
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+
+        </ul>
+    </div>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        //最基本的jquery事件绑定
+        function addcontent(){
+            $('ul').append('<li>8</li>>');
+            $('li:last').click(function () {
+                $('li').click(function() {
+            var tmp = $(this).text();
+            alert(tmp)
+            })
+        }
+
+        function func() {
+        }
+
+        //当前文档准备就绪
+        $(document).ready(function () {
+
+        });
+        
+        $(function () {
+//            $('li').click(function() {
+//            var tmp = $(this).text();
+//            alert(tmp)
+//        });
+            $('u1').delegate('li', 'click',function () {
+                var tmp = $(this).text();
+                alert(tmp)
+            })
+
+        })
+        
+    </script>
+
+</body>
+</html>

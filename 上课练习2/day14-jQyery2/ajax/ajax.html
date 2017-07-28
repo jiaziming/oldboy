@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <input id="n1" name="pp" />
+    <input type="button" value="提交" onclick="smbitdate()">
+
+    <form action="" method="post">
+        <p><input type="text" name="user"/></p>
+        <p><input type="password" name="pwd"/></p>
+        <input type="submit">
+
+    </form>
+    <script src="../jquery-3.2.0.js"></script>
+    <script>
+        function smbitdate() {
+            $('#n1').val()
+        }
+
+        $.ajax({
+            url:"http:127.0.0.1:800/index/",
+            date :{kk:123},
+            type:'POST',
+            success:function (arg) {
+                //arg，服务器返回数据 自动封装在arg中并调用
+
+                //当请求执行完成之后，自动调用
+            },
+            error:function () {
+                //当请求发生错误之后，自动调用
+            }
+            })
+
+    </script>
+
+</body>
+</html>

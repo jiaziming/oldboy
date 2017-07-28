@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎领导光临</title>
+</head>
+<body>
+<input type = "button" onclick="StopInerval();" value="停下来">
+    <script>
+//        setInterval("alert('alex')",2000);
+//         setTimeout  只执行一次操作
+        obj1 = setInterval("Func()",1000);
+
+        function StopInerval() {
+            clearInterval(obj1)
+//            clearTimeout(obj1)
+        }
+
+
+        function Func() {
+            var text = document.title;
+            var firstchar = text.charAt(0);
+            var substing = text.substring(1,text.length);
+            var newtitle = substing + firstchar;
+            document.title = newtitle;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="button" value="提交节目" onclick="sumbitdate();" />
+    <div id="container">
+
+    </div>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        function sumbitdate() {
+            $.ajax({
+                url:"http://music.163.com/api/playlist/detail?id=6296050",
+                date :{},
+                type:'POST',
+                dataType:'jsonp',
+                jsonp:'callback',
+                jsonpCallback:'result',
+                success:function (arg) {
+                    console.log(arg);
+                }
+    </script>
+</body>
+</html>

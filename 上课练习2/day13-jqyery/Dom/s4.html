@@ -10,7 +10,7 @@
         <h1>SB</h1>
     </div>
     <h1>特殊的：</h1>
-    <h3><input type="button" onclick="GetValue" value="获取值"></h3>
+    <h3><input type="button" onclick="GetValue();" value="获取值"></h3>
     <input id = "n2" type="text" />
     <select id="n3">
         <option value="1">北京</option>
@@ -20,10 +20,13 @@
     <textarea id="n4">asdasd</textarea>
 
     <script type="text/javascript">
+        var text = document.getElemntById("n1");
+
         function GetValue(){
-            var obj = document.getElementById();
-            alart(obj.value);
+            var obj = document.getElementById("n4");
+            alert(obj.value);
             obj.value = "2";
+
         }
 
     </script>

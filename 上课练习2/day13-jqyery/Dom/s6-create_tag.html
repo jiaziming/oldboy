@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id = "container"></div>
+    <a href="http://www.baidu.com" onclick="return AddElement();">添加</a>
+
+    <script>
+
+        function AddElement() {
+            /*
+            //创建标签，添加至container中
+            var nid =document.getElementById("container");
+            var tag = "<input type='text'/>";
+            nid.innerHTML = tag;
+            // 'beforeBegin', 'afterBegin', 'beforeEnd',  'afterEnd'
+
+            container.insertAdjacentHTML("beforeBegin",tag);
+            */
+
+
+            var createObj =document.createElement("a");
+            createObj.href = "http://www.baidu.com";
+            createObj.innerText = "跟谁学";
+
+            var nid = document.getElementById("container");
+            nid.appendChild(createObj);
+
+
+
+            return false
+        }
+    </script>
+</body>
